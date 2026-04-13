@@ -25,7 +25,7 @@ datalad run bids-validator-deno --outfile derivatives/validations/bids_validatio
 datalad push
 ```
 
-Refer to example https://github.com/bids-dandisets/000003/tree/curation as an example of how the branch should appear by the end of this process.
+Refer to https://github.com/bids-dandisets/000003/tree/curation as an example of how the branch should appear by the end of this process.
 
 Ideally, all errors should be resolved by your curation script so that the `datalad run` invocations of `bids-validator-deno` are able to commit the state.
 Otherwise, a manual `datalad save` step may be needed to simply show the number of errors has been reduced.
