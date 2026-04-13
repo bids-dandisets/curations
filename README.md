@@ -9,8 +9,8 @@ Instructions for how to contribute a manual curation to resolve all BIDS validat
 3. Go through the following Git/DataLad procedure:
 
 ```bash
-datalad clone https://github.com/bids-dandisets/000003
-cd 000003
+datalad clone https://github.com/bids-dandisets/[id]
+cd [id]
 git checkout basic_sanitization
 git checkout -b curation
 git push --set-upstream origin curation
