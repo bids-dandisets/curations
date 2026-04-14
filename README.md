@@ -6,7 +6,7 @@ Instructions for how to contribute a manual curation to resolve all BIDS validat
 2. Assess if the data source is appropriate.
    - Does it contain ephys data? If not, raise an issue here and I will investigate.
    - Does it contain real data, or just 'testing' data? If not real, please raise an issue here and we will build in a manual exclusion principle. Also please add the dataset to the issue tracker on https://github.com/dandi/dandi-archive/issues/2618.
-3. Read the existing BIDS validation summaries (_e.g._, [derivatives/validations/bids_validation](https://github.com/bids-dandisets//000003/blob/basic_sanitization/derivatives/validations/bids_validation.txt)), starting by identifying the common repeated ERRORS and brainstorming or researching a strategy to resolve them.
+3. Read the existing BIDS validation summaries (_e.g._, [derivatives/validations/bids_validation](https://github.com/bids-dandisets//000003/blob/basic_sanitization/derivatives/validations/bids_validation.txt)) by clicking on the hyperlinked errors from the main dashboard, starting by identifying the common repeated ERRORS and brainstorming or researching a strategy to resolve them.
 4. Go through the following Git/DataLad procedure:
 
 ```bash
