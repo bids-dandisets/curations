@@ -7,7 +7,9 @@ Instructions for how to contribute a manual curation to resolve all BIDS validat
    - Does it contain ephys data? If not, raise an issue here and I will investigate.
    - Does it contain real data, or just 'testing' data? If not real, please raise an issue here and we will build in a manual exclusion principle. Also please add the dataset to the issue tracker on https://github.com/dandi/dandi-archive/issues/2618.
 3. Read the existing BIDS validation summaries (_e.g._, [derivatives/validations/bids_validation](https://github.com/bids-dandisets//000003/blob/basic_sanitization/derivatives/validations/bids_validation.txt)) by clicking on the hyperlinked errors from the main dashboard, starting by identifying the common repeated ERRORS and brainstorming or researching a strategy to resolve them.
-4. Go through the following Git/DataLad procedure:
+4. If any questions or thoughts on source problems and solutions, raise an issue on this repository to start a dialogue, and Cody will manage dispersion at the appropriate upstream.
+5. If there are no easy solutions, then add a suppression of the error to the BIDS Validation configuration file. Otherwise, proceed to the next step.
+6. Go through the following Git/DataLad procedure:
 
 ```bash
 datalad clone https://github.com/bids-dandisets/[id]
@@ -31,4 +33,4 @@ Refer to https://github.com/bids-dandisets/000003/tree/curation as an example of
 Ideally, all errors should be resolved by your curation script so that the `datalad run` invocations of `bids-validator-deno` are able to commit the state.
 Otherwise, a manual `datalad save` step may be needed to simply show the number of errors has been reduced.
 
-5. Repeat 1-3 until all ERRORS are purged from the main dashboard.
+7. Repeat 1-3 until all ERRORS are purged from the main dashboard.
