@@ -18,7 +18,7 @@ git checkout basic_sanitization
 git checkout -b curation
 git push --set-upstream origin curation
 
-[add minimal modification script; bash or python; under /code; stem of filename should be 'curation']
+[add minimal modification script; bash or python; under /code; stem of filename should be 'curation' --- OR if simple enough, just manually edit some files]
 datalad save --message "add curation script"
 datalad run [python or bash] code/curation.[suffix]
 
